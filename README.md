@@ -83,9 +83,9 @@ Metoda de codificare consta in a pune valoarea 1 la indexul id-ului dat de Token
         return rez,vocabularySize
 ````
 # AutoEncoder
-Avand in vedere dimensiunea foarte mare a valorii vocabSize-ului pentru datele de antrenament (~6500) iar in medie numarul de cuvine/propozitie este ~7,
+Avand in vedere dimensiunea foarte mare a valorii vocabSize-ului pentru datele de antrenament (aprox. 6500) iar in medie numarul de cuvine/propozitie este 7,
 din punct de vedere al unei clasificari binare, numarul valorilor egale cu 1 este mult mai mic decat numarul valorilor egale cu 0, acest lucru facand foarte dificil
-ca modelul nu doar sa ghiceasca corect valorile de 1 ci efectiv sa aiba outputul 1 (Daca prezice constant doar 0 modelul  ar avea un loss foarte mic (~ 10^(-2)) acest lucru ducand la o acuratete de ~ 98%).
+ca modelul nu doar sa ghiceasca corect valorile de 1 ci efectiv sa aiba outputul 1 (Daca prezice constant doar 0 modelul  ar avea un loss foarte mic (aprox. 10^(-2)) acest lucru ducand la o acuratete de aprox. 98%).
 <br>
 >Solutie: Implementarea operatiei de Dimensionality Reduction (cu scopul de a rezolva problema de sparsity) folosind o arhitectura de tip AutoEncoder
 <br>
